@@ -1,0 +1,205 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #005baa;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.section ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.section  a{
+    text-decoration: none;
+    color: white;
+}
+
+.section a:hover{
+    font-size: large;
+    color: #ff6f00;
+    font-weight: bold;
+}
+
+.Elite{
+   font-size: larger;
+   font-family: "Lucida Blackletter";
+   color: #ff6f00;
+}
+
+.logo p {
+  color: #fafaf0;
+}
+
+.out  a{
+    text-decoration: none;
+    color: #ff6f00;
+}
+
+.out img{
+    margin-top: 5px;
+    width: 30px;
+    height: auto;
+}
+
+.out{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.home {
+  background: url('img/power.jpg') center/cover no-repeat;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.home {
+    margin-top: 60px;
+    padding-bottom: 225px;
+    padding-top: 225px;
+}
+
+.home h2 {
+  margin-bottom: 20px;
+  color: #ff6f00;
+}
+
+section {
+  padding: 40px 0;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #005baa;
+}
+
+.about {
+    text-align: center;
+}
+
+.service {
+    text-align: center;
+}
+
+.service b {
+    color: #005baa;
+    font-weight: 5000;
+}
+
+.project-img {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-img img {
+  width: 30%;
+  border-radius: 8px;
+}
+
+.project {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+footer {
+  background: #005baa;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 1024px) {
+  .project-img img {
+    width: 45%; 
+  }
+  
+  header {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  
+  .section ul {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .logo, .section, .out {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-img {
+    justify-content: center;
+  }
+
+  .project-img img {
+    width: 90%;
+  }
+
+  .home {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section a:hover {
+    font-size: initial; 
+  }
+
+  .home h2 {
+    font-size: 1.8rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .service ul li {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,262 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #ff6f00;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.section ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.section  a{
+    text-decoration: none;
+    color: white;
+}
+
+.section a:hover{
+    font-size: large;
+    color: #005baa;
+    font-weight: bold;
+}
+
+.Elite{
+   font-size: larger;
+   font-family: "Lucida Blackletter";
+   color: #ff6f00;
+}
+
+.out p {
+  color: #005baa;
+  font-weight: bolder;
+}
+
+.out img{
+    margin-top: 5px;
+    width: 30px;
+    height: auto;
+}
+
+.out{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 20px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+}
+
+.search-button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #005baa;
+}
+
+.title {
+    color: #ff6f00;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+.energy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.energy-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.energy-card a {
+    text-decoration: none;
+}
+
+.energy-card:hover {
+    transform: translateY(-5px);
+}
+
+.energy-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.energy-card h2 {
+    padding: 15px 20px 15px;
+    margin: 0;
+    color: #0072bc;
+    text-align: center;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f4f7f9, #e1ecf4);
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.history .title h1 {
+  font-size: 2.8em;
+  color: #ff6f00;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.history p {
+  font-size: 1.1em;
+  color: #444;
+  margin: 8px 0;
+}
+
+.history button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.history button:hover {
+  background-color: #ff6600;
+  transform: translateY(-2px);
+}
+
+.title-history h1 {
+    padding: 0 0 20px 0;
+    color: #ff6f00;
+    text-align: center;
+}
+
+.home-img {
+    background: url('img/plan\ s.png') center/cover no-repeat;
+    height: 600px;
+    width: auto;
+}
+
+.home h1 {
+    margin-top: 60PX;
+}
+
+.services {
+  padding: 60px 20px;
+  background-color: #f4f7f9;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5em;
+  color: #0072bc;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  color: #0072bc;
+  font-size: 1.2em;
+  margin: 15px 20px 5px;
+}
+
+.service-card p {
+  font-size: 0.95em;
+  color: #555;
+  margin: 0 20px 20px;
+}
+
+footer {
+  background: #ff6f00;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
